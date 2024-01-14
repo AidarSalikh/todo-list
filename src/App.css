@@ -1,0 +1,118 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+}
+:root {
+  --FT-SIZE: 1.5rem;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: rgb(240, 238, 236);
+  min-height: 100vh;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  font-size: var(--FT-SIZE);
+}
+
+.form {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="text"] {
+  font-size: var(--FT-SIZE);
+  border-radius: 5px;
+  /* padding: 10px; */
+}
+
+.form input {
+  width: 90%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #ccc;
+  /* height: 40px; */
+}
+
+.form button {
+  font-size: var(--FT-SIZE);
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 5px 20px;
+  margin-left: 1rem;
+}
+
+.clearButton {
+  font-size: var(--FT-SIZE);
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 5px 20px;
+}
+/* ///////// TODO LIST ///////// */
+
+.todoList {
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  /* background-color: bisque; */
+  padding: 1rem 0.5rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.todo::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.4rem;
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+
+.todoText {
+  margin-left: 20px;
+  /* font-size: var(--FT-SIZE); */
+}
+
+.todoComplete {
+  border: 1px solid black;
+  border-radius: 30%;
+  padding: 2px;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  display: grid;
+  place-content: center;
+}
+
+.deleteButton {
+  cursor: pointer;
+  margin-left: auto;
+  height: 1.5rem;
+}
