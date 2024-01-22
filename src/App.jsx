@@ -1,4 +1,4 @@
-import "./App.css";
+import "./style/App.css";
 import TodoMain from "./components/TodoMain";
 import { ContextProvider } from "./context/DataContext";
 

@@ -1,14 +1,11 @@
 import { FaTrashAlt, FaCheck } from "react-icons/fa";
-// delete backgroundColor variable
 
 export default function TodoItem({ todo, dispatch }) {
-  const backgroundStyle = {
-    backgroundColor: todo.complete ? "" : "",
-  };
   const textStyle = { textDecoration: todo.complete ? "line-through" : "none" };
   const completeStyle = { opacity: todo.complete ? "1" : "0" };
+
   return (
-    <div className="todo" style={backgroundStyle}>
+    <div className="todo">
       <span
         className="todoComplete"
         onClick={() => dispatch({ type: "completeTodo", id: todo.id })}
@@ -24,7 +21,6 @@ export default function TodoItem({ todo, dispatch }) {
         color="#413d3d"
         style={{ fontSize: "1.5rem" }}
       />
-
     </div>
   );
 }

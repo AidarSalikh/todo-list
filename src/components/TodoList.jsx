@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import TodoItem from "./TodoItem";
 import DataContext from "../context/DataContext";
-import catLight from "../assets/catLight.png";
+import cat from "../assets/Cat.png";
 
 export const TodoList = () => {
   const { todos, dispatch } = useContext(DataContext);
@@ -15,7 +15,7 @@ export const TodoList = () => {
       {!todos.length && (
         <>
           <p>Nothing to do</p>
-          <img src={catLight} style={{ width: "200px" }} />
+          <img src={cat} style={{ width: "200px" }} />
         </>
       )}
       {todos
